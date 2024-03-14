@@ -8,6 +8,6 @@ public class CubeMovement : MonoBehaviour
 
     private void Update()
     {
-        transform.rotation *= Quaternion.Euler(0, _rotationSpeed * Time.deltaTime, 0);
+        transform.localRotation *= Quaternion.Euler(0, _rotationSpeed * Time.deltaTime, 0);
     }
 }

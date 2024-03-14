@@ -9,6 +9,6 @@ public class SphereMovement : MonoBehaviour
 
     private void Update()
     {
-        transform.localPosition += new Vector3(_speed * Time.deltaTime, 0, 0);
+        transform.localPosition += transform.forward * _speed * Time.deltaTime;
     }
 }
